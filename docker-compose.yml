@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  lojista-pro-app:
+    # Constrói a imagem a partir do Dockerfile no diretório atual.
+    build: .
+    # Nome do container para fácil identificação.
+    container_name: lojista-pro-container
+    # Mapeia a porta 8080 do seu ZimaOS (host) para a porta 80 do container (Nginx).
+    # Você pode acessar o app em http://[IP_DO_ZIMAOS]:8080
+    ports:
+      - "8080:80"
+    # Garante que o container reinicie automaticamente em caso de falha ou
+    # após a reinicialização do sistema, a menos que seja parado manualmente.
+    restart: unless-stopped
