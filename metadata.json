@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Lojista Pro 2.0 (versão finalizada)",
+  "description": "ERP premium para gestão de assistência técnica B2B com inteligência artificial.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
